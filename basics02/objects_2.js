@@ -31,7 +31,7 @@ const obj2 = {3: "c", 4: "d"};
 // const obj3 = Object.assign({},obj1,obj2) //{} acts as an empty container for the arrays afterwards and ensures smooth object combinations into a single array
 
 const obj3 = {...obj1,...obj2}
-console.log(obj3);
+// console.log(obj3);
 
 const users = [
     {
@@ -53,10 +53,28 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+//++++++++++++++Object Destructure++++++++++
+
+const course ={
+    coursename : "js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// console.log(course.courseInstructor)
+
+// const {courseInstructor} = course;
+// console.log(courseInstructor);
+
+const {courseInstructor:instructor} = course;
+console.log(instructor);
+
+
 
